@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+body{
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+
+}
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 21px;
+
+}
+
+.instaLogo{
+    width: 100%;
+}
+
+.main__autorization{
+    min-width: 600px;
+    margin-top: 50px;
+    width: 60vw;
+    height: 45vh;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    max-width: 600px;
+}
+.main__registration{
+    min-width: 400px;
+    margin-bottom: 60px;
+    width: 60vw;
+    height: 6vh;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    max-width: 600px;
+
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+input{
+    display: block;
+    width: 80%;
+    height: 35px;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 2px solid #dadada;
+font-size: 1.2rem;
+    padding-left: 10px;
+}
+button{
+    width: 81%;
+    height: 37px;
+    margin-top: 10px ;
+    color: white;
+    background-color: #67b4f8;
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+    font-weight:bold;
+    border-radius: 5px;
+    border: none;
+}
+h2{
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #707070;
+}
+.data__autorization{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center
+
+
+}
+.facebook_autorization{
+    width: 80%;
+    height: 25px;
+    text-align: center;
+}
+.facebook__logo{
+    width: 25px;
+    height: 25px;
+}
+a{
+    margin-left: 10px;
+    height: 35px;
+     font-size: 1.6rem;
+    text-decoration: none;
+    color: #375184;
+}
+.data__autorization > a{
+    margin-top: 30px;
+    color: #073c6e;
+    font-size: 1.4rem;
+
+}
+.goToRegister {
+color: #0094f4;
+}
+
+.span {
+    color: #707070;
+}
