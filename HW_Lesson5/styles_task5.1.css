@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&family=Zeyada&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Zeyada', cursive;*/
+
+li {
+    font-family: 'Inter', cursive;
+    font-size: 20px;
+}
+
+
+.main__container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container1 > ol > li:nth-child(even) {
+    color: pink;
+}
+
+.container2 > ol > li:nth-child(odd) {
+    font-size: 22px;
+}
+
+.container3 > ol > li:nth-child(2n+4)::after {
+    content: "!";
+    color: #0094f4;
+}
+
+.container4 > ol > li:last-child {
+    color: blueviolet;
+}
+
+.container5 > ol > li::first-letter {
+    color: red;
+    font-size: 30px;
+}

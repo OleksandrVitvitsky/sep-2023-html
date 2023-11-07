@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway&family=Zeyada&display=swap');
+/*font-family: 'Inter', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+.main__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 80vh;
+    align-items: center;
+
+}
+
+.card {
+    height: 490px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 15px;
+    padding-bottom: 20px;
+
+}
+
+.card__Img {
+    height: 150px;
+    width: 150px;
+    border: 1.5px solid black;
+    border-radius: 26%;
+    top: 50px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.card1__bg-img {
+    background-image: url(images/oplot.jpg);
+
+}
+
+.card2__bg-img {
+    background-image: url(images/bulat.jpg);
+
+}
+
+.card3__bg-img {
+    background-image: url(images/yatagan.jpg);
+}
+
+.cardBody {
+    width: 320px;
+    height: 490px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+    border: 1.5px solid black;
+    box-shadow: 15px 15px 15px silver;
+}
+
+h2 {
+    margin-top: 40px;
+    /*font-family: 'Courgette', cursive;*/
+}
+
+.card_text {
+    text-align: justify;
+    margin: 0 20px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+/*.button {*/
+/*    !*font-family: 'Roboto Condensed', sans-serif;*!*/
+/*    margin-bottom: 10px;*/
+/*    background: #0b7886;*/
+/*    width: 200px;*/
+/*    height: 40px;*/
+/*    border-radius: 5px;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    font-size: 18px;*/
+/*    !*text-transform: uppercase;*!*/
+/*    line-height: 40px;*/
+/*    cursor: pointer;*/
+/*    position: relative;*/
+/*    overflow: hidden;*/
+/*}*/
+
+/*.button p {*/
+/*    margin: 0;*/
+/*    position: relative;*/
+/*    transition: all ease 1s;*/
+/*}*/
+
+/*.shadow {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    height: 40px;*/
+/*    width: 0;*/
+/*    background: #205081;*/
+/*    overflow: hidden;*/
+/*    transition: all ease 2s;*/
+/*    border-radius: 5px;*/
+
+/*}*/
+
+/*.shadow span {*/
+/*    opacity: 0;*/
+/*    transition: all ease 3s;*/
+/*}*/
+
+/*.button:hover .shadow {*/
+/*    width: 100%;*/
+/*}*/
+
+/*.button:hover p {*/
+/*    opacity: 0;*/
+/*}*/
+
+/*.button:hover .shadow span {*/
+/*    opacity: 1;*/
+/*}*/
+
+/*span > a {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/
+
+/*hr {*/
+/*    border-top: 3px black solid;*/
+/*}*/
