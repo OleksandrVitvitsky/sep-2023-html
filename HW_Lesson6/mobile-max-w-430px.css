@@ -1,0 +1,25 @@
+@media screen and (max-width: 430px) {
+    .main__container {
+        height: 50vh;
+        width: 100vw;
+    }
+
+    .flexBox {
+        flex-direction: column;
+    }
+
+    header {
+        height: 15%;
+        margin-bottom: 10px;
+    }
+
+    .box_B {
+        height: 70%;
+        width: 100%;
+    }
+
+    .box_C {
+        height: 15%;
+        width: 100%;
+    }
+}
