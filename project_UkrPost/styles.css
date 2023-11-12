@@ -77,6 +77,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    /*overflow: hidden;*/
 
 }
 
@@ -123,9 +124,9 @@ body {
     padding-left: 1.04vw;
 }
 
-input[type='text'] {
+.mainPanel__services__box input[type='text'] {
     width: 39.58vw;
-    height: 7.03vh;
+    height: 7vh;
     /*display: inline-flex;*/
     /*padding: 0 230px 0 30px;*/
     align-items: center;
@@ -144,6 +145,25 @@ input[type='text'] {
     border: none;
 }
 
+.mainPanel__services__box button {
+    position: relative;
+    left: -11.45vw;
+    top: 0.15vh;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    line-height: 72px;
+    width: 8.5vw;
+    height: 7vh;
+}
+
+.default-btn-content {
+    color: #0e2f4b;
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+}
+
 input:focus {
     outline: 0;
     outline-offset: 0;
@@ -153,7 +173,9 @@ input:focus {
 .nav-service-category {
     display: flex;
     gap: 2.08vw;
+
 }
+
 
 .container__nav-service-category {
     display: flex;
@@ -200,6 +222,7 @@ input:focus {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .wrapper-for-service-categories {
@@ -207,8 +230,9 @@ input:focus {
     height: 61.52vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 2.083vw;
+    overflow: hidden;
 }
 
 .container-service-categories {
@@ -230,6 +254,12 @@ input:focus {
     justify-content: flex-start;
 }
 
+
+.service-category:hover {
+    transform: scale(1.15);
+    transition: transform .8s;
+}
+
 .first-category_title {
     color: #0E2F4B;
     font-size: 48px;
@@ -249,6 +279,7 @@ input:focus {
 }
 
 .service-category h3 {
+    position: absolute;
     color: #0E2F4B;
     font-size: 24px;
     font-style: normal;
@@ -258,7 +289,13 @@ input:focus {
     margin-top: 3.125vh;
 }
 
-.service-category a {
+svg {
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.service-category span {
+    display: block;
     text-decoration: none;
     color: #0E2F4B;
     font-size: 14px;
@@ -266,16 +303,13 @@ input:focus {
     font-weight: 700;
     line-height: 20px;
     margin-top: 1.269vh;
-    margin-left: 2.08vw;
-}
+    /*margin-left: 2.08vw;*/
 
-.service-category a:after {
-    content: "Докладніше >";
 }
 
 /*#endregion*/
 
-/*#region Sales export*/
+/*#region --> Sales export*/
 .section_salesExport {
     width: 100%;
     height: 64.45vh;
@@ -294,6 +328,7 @@ input:focus {
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    overflow: hidden;
 
 }
 
@@ -318,6 +353,9 @@ input:focus {
 }
 
 .salesExport-wrapper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
     border-radius: 10px;
     background: #FDC13D;
@@ -335,5 +373,284 @@ input:focus {
 
 /*#endregion*/
 
+/*#region --> Financial Service*/
+.section_financialService {
+    width: 100vw;
+    height: 85.9375vh;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container_financialService {
+    width: 83.33vw;
+    height: 76.17vh;
+    /*border: #ed6556 solid 1px;*/
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+.container_financialService__title {
+    width: 81.25vw;
+    height: 21.48vh;
+    border-radius: 10px;
+    background: #FDC13D;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    align-items: flex-start;
+
+}
+
+.container_financialService__title p:first-child {
+    color: #0E2F4B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 5.078vh;
+}
+
+.container_financialService__title p:nth-child(2) {
+    color: #0E2F4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 1.17vh;
+}
+
+.container_financialService__title > a {
+    text-decoration: none;
+    color: #0E2F4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-top: 1.46vh;
+    margin-bottom: 3.906vh;
+}
+
+.container_financialService__title > * {
+    margin-left: 5.2083vw;
+}
+
+.container_financialService > h2 {
+    color: #0E2F4B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 11.816vh;
+}
+
+.container-finService-categories {
+    height: 26.367vh;
+    /*width: 100%;*/
+    /*border: 1px solid #0094f4;*/
+    display: flex;
+    /*align-items: center;*/
+    gap: 2.083vw;
+    margin-top: 3.125vh;
+
+}
+
+.finService-category {
+    width: 18.75vw;
+    height: 100%;
+    /*background-color: #1c7b7e;*/
+}
+
+.container_financialService > * {
+    margin-left: 1.041vw;
+}
+
+.finService-category h4 {
+    color: #0E2F4B;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 3.125vh;
+}
+
+.finService-category a {
+    text-decoration: none;
+    color: #0E2F4B;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 1.269vh;
+}
+
+.finService-category > * {
+    margin-left: 2.083vw;
+}
+
 /*#endregion*/
+
+/*#region --> find Index*/
+
+.section_findIndex {
+    width: 100%;
+    height: 62.011vh;
+    background-color: #0E2F4B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.findIndex-wrapper {
+    width: 83.33vw;
+    height: 35.64vh;
+    /*border: 2px yellow solid;*/
+}
+
+.findIndex-wrapper h2 {
+    color: #F8F8F8;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 3.027vh;
+}
+
+.findIndex-wrapper p {
+    color: #99A2AA;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 2.539vh;
+}
+
+.findIndex-wrapper input[type='text'] {
+    display: flex;
+    width: 35.1375vw;
+    height: 7.617vh;
+    padding: 0 2.08vw;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 1px solid #E8EBEE;
+    background-color: #FFF;
+    color: #6C757D;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.5px;
+}
+
+.findIndex-wrapper button {
+    display: flex;
+    width: 248.98px;
+    height: 80px;
+    padding: 28px 86.725px 28px 87.05px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FDC13D;
+    color: #0E2F4B;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px; /* 400% */
+}
+
+.findIndex-wrapper form {
+    display: flex;
+    align-items: center;
+    margin-top: 7.8125vh;
+    gap: 0.763vw;
+}
+
+.findIndex-wrapper > * {
+    margin-left: 1.041vw;
+}
+
+
+/*#endregion*/
+
+/*#region --> News*/
+.section_news {
+    width: 100%;
+    height: 127.34vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news-wrapper {
+    height: 109.76vh;
+    width: 83.33vw;
+    border: 2px solid blue;
+}
+
+.news-wrapper h2 {
+    color: #0E2F4B;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.container-news {
+    width: 100%;
+    height: 51.75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.08vw;
+    background-color: #9d9a9a;
+}
+
+.container1-news, .container2-news {
+    width: 39.58vw;
+    height: 51.75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.08vh;
+
+}
+
+.container-news a {
+    background-color: #408f3b;
+    width: 39.58vw;
+    height: 21.41vh;
+    border: 1px solid yellow;
+    /*text-decoration: none;*/
+}
+
+.container-news p {
+    text-decoration: none;
+    /*display: inline-flex;*/
+    padding: 2.34vh 0 0 0;
+    align-items: center;
+    color: #0E2F4B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.container_image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*#endregion*/
+
+/*#endregion*/
+
 
